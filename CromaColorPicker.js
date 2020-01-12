@@ -8,7 +8,14 @@ const colors = [
 ];
 function CromaColorPicker(props) {
   const [primarySelectedColor, setPrimarySelectedColor] = useState("#db0a5b");
-  const [selectedColor, setSelectedColor] = useState("#db0A5b");
+  const [selectedColor, _setSelectedColor] = useState("#db0A5b");
+  
+  const setSelectedColor = (color) => {
+    if (props.onChangeColor && color !== selectedColor) {
+      props.onChangeColor(color);
+    }
+    _setSelectedColor(color);
+  }
   function renderShades(h) {
     console.log("h=" + h);
     let w = 100, b;
