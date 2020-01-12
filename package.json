@@ -1,0 +1,27 @@
+{
+  "name": "croma-color-picker",
+  "version": "1.0.0",
+  "description": "Easy to use color picker for react native",
+  "main": "CromaColorPicker.js",
+  "scripts": {
+    "lint": "eslint .",
+    "prettier": "eslint . --fix"
+  },
+  "files": [
+    "CromaColorPicker.js"
+  ],
+  "keywords": [
+    "react-native",
+    "react"
+  ],
+  "author": "Kamal Joshi <kkjoshi.it@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^4.1.1",
+    "eslint-config-react-native-prettier": "^1.0.1"
+  },
+  "dependencies": {
+    "pigment": "^0.1.0",
+    "react-native-platform-touchable": "^1.1.1"
+  }
+}
