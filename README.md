@@ -1,7 +1,7 @@
 # croma-color-picker
 Simple and intutive color picker for react native
 
-![](Croma_color-picker.gif)
+![](Croma-color-picker.gif)
 
 Installation
 ``` npm install --save croma-color-picker ```
