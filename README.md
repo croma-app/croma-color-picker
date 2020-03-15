@@ -1,5 +1,5 @@
 # croma-color-picker
-Simple and intutive color picker for react native
+Simple and intuitive color picker for react native
 
 ![](Croma-color-picker.gif)
 
