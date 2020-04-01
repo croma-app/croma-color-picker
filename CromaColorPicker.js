@@ -19,7 +19,6 @@ function CromaColorPicker(props) {
     _setSelectedColor(color);
   }
   function renderShades(h) {
-    console.log("h=" + h);
     let w = 100, b;
     let colors = [];
     
@@ -56,7 +55,7 @@ function CromaColorPicker(props) {
         <TextInput 
             style={styles.input}
             value={selectedColor}
-            onChangeText={color => {}}
+            onChangeText={color => setSelectedColor(color)}
         />
         <View style={[styles.selectedColor, {backgroundColor: selectedColor}]}></View>
       </View>
@@ -85,7 +84,7 @@ const styles = StyleSheet.create({
   selectedColorView: {
     marginTop: 8,
     flexDirection: "row",
-    flex: 1,
+    flex: 2,
   },
   colorBox: {
     flex: 1,

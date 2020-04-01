@@ -1,6 +1,6 @@
 {
   "name": "croma-color-picker",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Easy to use color picker for react native",
   "main": "CromaColorPicker.js",
   "scripts": {
