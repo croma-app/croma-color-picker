@@ -6,6 +6,7 @@ const colors = [
   '#f50057', '#db0A5b', '#c51162', '#9c27b0', '#673ab7', '#4b77be', '#2196f3', '#03a9f4', '#00bcd4', '#1bbc9b',
   '#009688', '#4caf50', '#8bc34a', '#cddc39', '#ffeb3b', '#ffc107', '#ff9800', '#ff5722', '#f44336', '#e00032'
 ];
+const fixedColors = ['#000000', '#ff0000', '#ffa500','#ffff00', '#00ff00', '#00ffff', '#0000ff', '#ff00ff','#00ffa5', '#ffffff'].sort();
 const colorsRow1 = colors.slice(0, 10);
 const colorsRow2 = colors.slice(10, 20);
 function CromaColorPicker(props) {
@@ -50,7 +51,9 @@ function CromaColorPicker(props) {
       </View>
       
       {renderShades(new Color(primarySelectedColor).hsl[0])}
-      
+      <View style={styles.fixedColorView}>
+        {fixedColors.map(color => <ColorBox style={styles.fixedColorBox} onPress={() => {setSelectedColor(color);}} color={color}/>)}
+      </View>
       <View style={styles.selectedColorView}>
         <TextInput 
             style={styles.input}
@@ -59,6 +62,7 @@ function CromaColorPicker(props) {
         />
         <View style={[styles.selectedColor, {backgroundColor: selectedColor}]}></View>
       </View>
+
     </View>
   )
 }
@@ -82,7 +86,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
   },
   selectedColorView: {
-    marginTop: 8,
+    marginTop: 10,
     flexDirection: "row",
     flex: 2,
   },
@@ -102,5 +106,10 @@ const styles = StyleSheet.create({
     borderBottomColor: "black",
     borderBottomWidth: 1
   },
+  fixedColorView: {
+    flex: 1,
+    flexDirection: "row",
+    paddingTop: 10,
+  }
 });
 export {CromaColorPicker }
