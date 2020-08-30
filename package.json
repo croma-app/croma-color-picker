@@ -27,10 +27,20 @@
   "license": "MIT",
   "devDependencies": {
     "eslint": "^4.1.1",
-    "eslint-config-react-native-prettier": "^1.0.1"
+    "eslint-config-react-native-prettier": "^1.0.1",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.13"
   },
   "dependencies": {
     "pigment": "^0.1.0",
     "react-native-platform-touchable": "^1.1.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,css,md}": "prettier --write"
   }
 }

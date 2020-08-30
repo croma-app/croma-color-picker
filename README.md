@@ -1,4 +1,5 @@
 # croma-color-picker
+
 Simple and intuitive color picker for react native
 
 ![](Croma-color-picker-mobile.gif)
@@ -7,21 +8,26 @@ Simple and intuitive color picker for react native
 
 ### Installation
 
-``` npm install --save croma-color-picker ```
+`npm install --save croma-color-picker`
 
 ### Example
+
 https://github.com/croma-app/croma-react/blob/master/screens/ColorPickerScreen.js
 
+### Publish
 
-### Publish 
 Change version in package.json and run
-``` npm publish ```
+`npm publish`
 
 ### web
 
-  Used in https://croma.app
+Used in https://croma.app
 
 ### Android
-  Playstore: https://play.google.com/store/apps/details?id=app.croma
 
+Playstore: https://play.google.com/store/apps/details?id=app.croma
 
+### Local testing
+
+Add following(With relative local path) to your package.json
+`"croma-color-picker": "file:../croma-color-picker"`
