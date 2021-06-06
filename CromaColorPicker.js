@@ -80,7 +80,7 @@ function CromaColorPicker(props) {
     ));
   }
   return (
-    <View props={props} style={[...props.style, styles.container]}>
+    <View props={props} style={[...props.style]}>
       <View style={styles.primaryColorsView}>
         {colorsRow1.map(color => (
           <ColorBox
@@ -148,10 +148,6 @@ function ColorBox(props) {
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flexDirection: "column",
-    flex: 1
-  },
   primaryColorsView: {
     flex: 1,
     flexDirection: "row"
