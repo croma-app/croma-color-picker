@@ -29,5 +29,6 @@ Playstore: https://play.google.com/store/apps/details?id=app.croma
 
 ### Local testing
 
-Add following(With relative local path) to your package.json
-`"croma-color-picker": "file:../croma-color-picker"`
+Add following(With relative local path) to your package.json in any react native project or use [Croma](https://github.com/croma-app/croma)
+
+``` "croma-color-picker": "file:../croma-color-picker" ```
