@@ -27,6 +27,9 @@ Used in https://croma.app
 
 Playstore: https://play.google.com/store/apps/details?id=app.croma
 
+### iOS
+App store: https://apps.apple.com/app/croma-palette-manager/id1596763657
+
 ### Local testing
 
 Add following(With relative local path) to your package.json in any react native project or use [Croma](https://github.com/croma-app/croma)
