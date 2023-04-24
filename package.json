@@ -28,8 +28,8 @@
   "devDependencies": {
     "eslint": "^4.1.1",
     "eslint-config-react-native-prettier": "^1.0.1",
-    "husky": "^4.2.5",
-    "lint-staged": "^10.2.13"
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.1"
   },
   "dependencies": {
     "pigment": "^0.1.0",
