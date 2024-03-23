@@ -150,11 +150,11 @@ function ColorBox(props) {
 const styles = StyleSheet.create({
   primaryColorsView: {
     flex: 1,
-    flexDirection: "row"
+    flexDirection: "row",
   },
   shadesView: {
     flex: 1,
-    flexDirection: "row"
+    flexDirection: "row",
   },
   selectedColorView: {
     marginTop: 10,
@@ -164,8 +164,14 @@ const styles = StyleSheet.create({
   colorBox: {
     flex: 1
   },
-  primaryColorBox: {},
-  shadesColorBox: {},
+  primaryColorBox: {
+    marginLeft: -1,
+    marginTop: -1
+  },
+  shadesColorBox: {
+    marginLeft: -1,
+    marginTop: -1
+  },
   selectedColor: {
     width: "50%"
   },
@@ -177,7 +183,8 @@ const styles = StyleSheet.create({
   fixedColorView: {
     flex: 1,
     flexDirection: "row",
-    paddingTop: 10
+    paddingTop: 10,
+    marginLeft: -1
   }
 });
 export { CromaColorPicker };
